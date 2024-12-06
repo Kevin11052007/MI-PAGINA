@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panamá Viejo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            display: flex;
+            background-color: red;
+        }
+        nav a {
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            background: blue;
+            border-right: 1px solid #444;
+            cursor: pointer;
+        }
+        nav a:hover, nav a.active {
+            background-color: white;
+        }
+        .tab-content {
+            padding: 20px;
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .grid {
+            display: grid;
+            gap: 15px;
+        }
+        .grid.images {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .grid.videos {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .grid-item {
+            text-align: center;
+        }
+        .grid-item img, .grid-item video {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .grid-item p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: blue;
+        }
+        footer {
+            background-color: #99CC99;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .external-link {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .external-link:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#inicio" class="active" onclick="openTab(event, 'inicio')">Inicio</a>
+        <a href="#imagenes" onclick="openTab(event, 'imagenes')">Galería de Imágenes</a>
+        <a href="#videos" onclick="openTab(event, 'videos')">Galería de Videos</a>
+    </nav>
+
+    <div id="inicio" class="tab-content active">
+        <h1>Panamá Viejo</h1>
+        <p>Panamá Viejo es un sitio histórico fundado en 1519 por Pedro Arias Dávila, fue un punto clave para la colonización y el comercio en el continente, siendo el inicio del Camino de Cruces y del Camino Real, rutas que conectaban con el Caribe para facilitar el transporte de oro, plata y otros bienes hacia Europa.
+
+
+
+Fue saqueada en 1671 por un pirata ingles llamado Henry Morgan, lo que llevó a la fundación de una nueva ciudad en el lugar donde hoy se encuentra el Casco Antiguo de Panamá. Las ruinas de Panamá Viejo incluyen la Catedral, el Convento de la Concepción, y el mencionado Puente del Rey, entre otros. </p>
+        <a href="https://www.turismopanama.com" class="external-link" target="_blank">Visita el sitio oficial de turismo en Panamá</a>
+    </div>
+
+    <div id="imagenes" class="tab-content">
+        <h2>Galería de Imágenes</h2>
+        <div class="grid images">
+            <div class="grid-item">
+                <img src="letrero.jpg" alt="Entrada de Panamá Viejo">
+                <p>Entrada de Panamá Viejo</p>
+            </div>
+            <div class="grid-item">
+                <img src="puente.jpg" alt="Puente del rey">
+                <p>Puente de piedra, su proposito principal era conectar la ciudad de Panama Viejo con el interior del pais, facilitando el transporte de personas, bienes y recursos a lo largo del Camino Real</p>
+            </div>
+            <div class="grid-item">
+                <img src="museo.jpg" alt=" Museo de Panamá viejo">
+                <p>Museo de Panamá Viejo, este museo cuenta con objetos que nos recuerdan la historia de este lugar.</p>
+            </div>
+            <div class="grid-item">
+                <img src="entrada.jpg" alt="Imagen 4">
+                <p>Entrada del recorrido, este camino esta lleno de obras arquitectonicas que nos recuerdan como era antes Panama Viejo</p>
+            </div>
+            <div class="grid-item">
+                <img src="transporte.jpg" alt="Imagen 5">
+                <p> Autos que transportan a los visitantes del sitio arqueologico de Panama Viejo</p>
+            </div>
+            <div class="grid-item">
+                <img src="plaza.jpg" alt="Imagen 6">
+                <p>Plaza donde venden artesanias ubicada al frente de el museo</p>
+            </div>
+            <div class="grid-item">
+                <img src="estatua.jpg" alt="Imagen 7">
+                <p>La estatua de José María Morelos en el sitio arqueológico de Panamá Viejo simboliza la relación histórica entre Panamá y México</p>
+            </div>
+            <div class="grid-item">
+                <img src="fonda.jpg" alt="Imagen 8">
+                <p>Fonda apodada "la pataconera" donde van muchas personas residentes de este barrio</p>
+            </div>
+            <div class="grid-item">
+                <img src="parque.jpg" alt="Imagen 9">
+                <p>Sitios recreativos para los jovenes y niños de Panama viejo</p>
+            </div>
+            <div class="grid-item">
+                <img src="basura.jpg" alt="Imagen 10">
+                <p>Como se observa en Panama Viejo no hay una buena disposicion de los desechos y hay muchos lugares asi</p>
+            </div>
+            <div class="grid-item">
+                <img src="duros.jpg" alt="Imagen 11">
+                <p>Este barrio se caracteriza por tener muchas personas que emprenden con la venta de duros,batidos etc</p>
+            </div>
+            <div class="grid-item">
+                <img src="calles.jpg" alt="Imagen 12">
+                <p>En Panama viejo hay muchas calles como esta que necesitan reparacion, pero nunca las arreglan </p>
+            </div>
+            <div class="grid-item">
+                <img src="arte.jpg" alt="Imagen 13">
+                <p> En Panama viejo hay mucho arte de personas que buuscan dar un mensaje de esperanza</p>
+            </div>
+            <div class="grid-item">
+                <img src="ruinas.jpg" alt="Imagen 14">
+                <p> Ruinas de lo que fue Panama la Vieja</p>
+            </div>
+            <div class="grid-item">
+                <img src="manglar.jpg" alt="Imagen 15">
+                <p>Vista panoramica desde  mirador en Panama viejo</p>
+            </div>
+            <div class="grid-item">
+                <img src="camino.jpg" alt="Imagen 16">
+                <p>Otra vista de los hermosas que son los paisajes en Panama la Vieja </p>
+            </div>
+        </div>
+    </div>
+    </style>
+</head>
+<body>
+    <div style="min-height: 90vh;">
+        
+    </div>
+   
+        </div>
+    </div>
+
+    <div id="videos" class="tab-content">
+        <h2>Galería de Videos</h2>
+        <div class="grid videos">
+            <div class="grid-item">
+                <video controls>
+                    <source src="futbol.mp4" type="video/mp4">
+                </video>
+                <p>Panamá Viejo cuenta con diversas canchas para que los jovenes busquen maneras de salir adelante y no meterse en pandillas, ni drogas. Y hasta cuenta con su propio club llamado "Los cangregeros</p>
+            </div>
+            <div class="grid-item">
+                <video controls>
+                    <source src="spray.mp4" type="video/mp4">
+                </video>
+                <p>Muchos jóvenes se expresan a través del arte, los que les permite expresarse libremente sin prejuicios.</p>
+           
+            <div class="grid-item">
+                <video controls>
+                    <source src="ruinas2.mp4" type="video/mp4">
+                </video>
+                <p>Recorrido por las ruinas</p>
+            </div>
+            <div class="grid-item">
+                <video controls>
+                    <source src="helados.mp4" type="video/mp4">
+                </video>
+                <p>Vendedores emprendedores, una cualidad de panama viejo es que tiene gente muy trabajadora</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>Kevin Rucas, Yaleshka Scott, Yosiel Herrera, Eder García, Kendrick Viquez y Alexander Vázquez</p>
+    </footer>
+
+    <script>
+        function openTab(evt, tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            const links = document.querySelectorAll('nav a');
+            links.forEach(link => link.classList.remove('active'));
+
+            document.getElementById(tabId).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
